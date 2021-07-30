@@ -1,0 +1,55 @@
+.craft {
+    padding: 71px 0 95px;
+    color: $primecolor;
+    &__title {
+        @include font(32px, 41.92px, 400);
+        margin-bottom: 32px;
+        margin-top: 17px;
+        color: $primecolor;
+        text-align: center;
+        color: $primecolor;
+    }
+    &__btn {
+        @include font(14px, 16.41px, 400);
+        background-color: #fff;
+        color: $primecolor;
+        padding: 16px 94px;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 100%;
+        margin-top: 142px;
+    }
+    &__img img {
+        width: 100%;
+        height: 542px;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__description {
+        @include font(16px, 24px, 400);
+        color: $primecolor;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__button {
+        @include font(16px, 24px, normal);
+        display: inline-block;
+        background-color: $primecolor;
+        color: #fff;
+        padding: 17px 154px;
+        // margin-bottom: 185px;
+        text-align: center;
+        transition: .6s;
+        &:hover {
+            transition: .6s;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

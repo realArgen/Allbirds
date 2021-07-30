@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MuseoSansCyrl, sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin font($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+$primecolor: #212A2F;
+@import "burger-menu";
+@import "header";
+@import "hero";
+@import "favorites";
+@import "carousel";
+@import "craft";
+@import "carousel2";
+@import "carbon";
+@import "stories";
+@import "overlay";
+@import "footer";
+@import "up-btn";
+@import "adaptive";
+// @import "media";

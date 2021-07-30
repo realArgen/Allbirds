@@ -1,0 +1,110 @@
+.footer {
+    padding: 70px 0 90px;
+    // height: 956px;
+    background: $primecolor;
+    color: #fff;
+    &__form {
+        width: 462px;
+        &-input {
+            margin-top: 6px;
+            margin-right: 12px;
+            width: 302px;
+            height: 48px;
+            padding: 14px;
+            border: none;
+            background: #4D5559;
+            &::placeholder {
+                @include font(14px, 12px, 300);
+            }
+        }
+        &-btn {
+            width: 130px;
+            color: #fff;
+            padding: 17px 30px;
+            background: #4D5559;
+            border-radius: 6px;
+            border: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: .6s;
+            &:hover {
+                transition: .6s;
+                background: rgb(255, 255, 255);
+                color: #000000;
+            }
+        }
+    }
+    &__columns {
+        display: flex;
+        column-gap: 240px;
+        margin-top: 20px;
+    }
+    &__item {
+        &-title {
+            @include font(14px, 21px, 400);
+            text-transform: uppercase;
+            margin-bottom: 21px;
+        }
+        &-li {
+            @include font(12px, 12px, 400);
+            margin-bottom: 16px;
+            transition: .9s;
+            &:hover {
+                transition: .9s;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 85px;
+    }
+    &__content {
+        // &-title {
+        //     @include font(14px, 21px, 400);
+        //     text-transform: uppercase;
+        // }
+        &-title {
+            @include font(14px, 18px, 400);
+            margin-top: 21px;
+            margin-bottom: 15px;
+        }
+        &-icons {
+            display: flex;
+            column-gap: 17px;
+            margin-top: 12px;
+        }
+        &-icon {
+            display: flex;
+            color: #fff;
+            margin-top: 12px;
+            transition: 0.6s;
+            &:hover {
+                transition: 0.6s;
+                font-size: 20px;
+                color: #18795b;
+            }
+        }
+    }
+    &__flags {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 21.12px;
+        &-images {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &__copyright {
+        @include font(12px, 18px, 400);
+        text-align: center;
+        margin-top: 94px;
+    }
+}

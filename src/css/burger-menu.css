@@ -1,0 +1,31 @@
+.mobile-btn {
+  width: 55px;
+  height: 45px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mobile-btn__span {
+  height: 3px;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+.mobile-btn__span::before, .mobile-btn__span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  z-index: 6;
+}
+.mobile-btn__span::before {
+  top: -10px;
+}
+.mobile-btn__span::after {
+  top: 10px;
+}

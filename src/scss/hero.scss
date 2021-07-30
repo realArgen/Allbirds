@@ -1,0 +1,46 @@
+.hero {
+    background: url("../images/hero/hero.png") left top/100% 100%;
+    padding-top: 321px;
+    // padding-bottom: 66px;
+    &__content {
+        height: 80vh;
+        text-align: center;
+        color: #FFFFFF;
+        &-title {
+            @include font(48px,
+            62.88px,
+            700);
+            text-transform: uppercase;
+        }
+        &-subtitle {
+            @include font(16px,
+            24px,
+            400);
+            text-transform: uppercase;
+            margin-bottom: 207px;
+        }
+        &-btns {
+            display: flex;
+            // justify-content: space-between;
+            // column-gap: 20px;
+        }
+        &-btn {
+            @include font(14px,
+            16.41px,
+            400);
+            padding: 17px 45px;
+            text-transform: uppercase;
+            color: #9daab1;
+            border: none;
+            border-radius: 6px;
+            // margin-bottom: 18px;
+            transition: .6s;
+            cursor: pointer;
+            &:hover {
+                transition: .6s;
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+}

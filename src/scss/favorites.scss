@@ -1,0 +1,113 @@
+.favorites {
+    padding: 71px 0 95px;
+    color: $primecolor;
+    &__title {
+        @include font(32px, 41.92px, 400);
+        margin-bottom: 32px;
+        margin-top: 17px;
+        color: $primecolor;
+        text-align: center;
+        color: $primecolor;
+    }
+    &__menu {
+        display: flex;
+        // justify-content: space-between;
+        column-gap: 30px;
+        justify-content: center;
+        @include font(16px, 24px, 400);
+        margin-bottom: 48px;
+    }
+    &__li {
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        @include font(16px, 24px, 400);
+        color: $primecolor;
+        cursor: pointer;
+        &:hover {
+            transition: .6s;
+            color: #000000;
+            text-decoration: underline;
+        }
+    }
+    &__item {
+        position: relative;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__btns {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__btn {
+        @include font(14px, 16.41px, 400);
+        background-color: #fff;
+        color: $primecolor;
+        padding: 16px 94px;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        transition: .6s;
+        cursor: pointer;
+        &:hover {
+            transition: .2s;
+            background: #000;
+            color: #fff;
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        margin-right: 12px;
+    }
+    &__shoes {
+        width: 100%;
+        margin-top: 142px;
+    }
+    &__shoes-img {
+        width: 100%;
+        height: 542px;
+    }
+    &__description {
+        @include font(16px, 24px, 400);
+        color: $primecolor;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    &__button {
+        @include font(16px, 24px, normal);
+        display: inline-block;
+        background-color: $primecolor;
+        color: #fff;
+        padding: 17px 45px;
+        // margin-bottom: 185px;
+        margin-right: 24px;
+        text-align: center;
+        transition: .6s;
+        cursor: pointer;
+        &:hover {
+            transition: .6s;
+            background: #ccc;
+            color: #000000;
+        }
+    }
+}
+
+.tab-item-1,
+.tab-item-2,
+.tab-item-3 {
+    visibility: hidden;
+}
+
+.exist {
+    visibility: visible;
+}

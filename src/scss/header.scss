@@ -1,0 +1,47 @@
+.header {
+    position: relative;
+    padding: 10px 15px;
+    &__menu {
+        @include font(14px, 17px, normal);
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+    }
+    &__link {
+        cursor: pointer;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__gender {
+        display: flex;
+        column-gap: 36px
+    }
+    &__menu {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+    }
+    &__contact {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    &__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__choice {
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+    }
+    &__men,
+    &__women {
+        cursor: pointer;
+    }
+}

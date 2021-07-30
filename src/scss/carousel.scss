@@ -1,0 +1,66 @@
+// ***************************************************************
+.carousel {
+    padding: 119px 0 138px 138px;
+    &__img {
+        height: 396px;
+        width: 396px;
+        margin: 0 auto;
+        padding: 0 12px;
+        position: relative;
+    }
+    &__title {
+        @include font(32px, 41.92px, 400);
+        margin-bottom: 24px;
+        margin-left: 11px;
+    }
+    h2 {
+        @include font(22px, 29.04px, 400);
+        margin-left: 16px;
+    }
+}
+
+// .owl-stage-outer .owl-stage div.owl-item.active {
+//     width: 396px !important;
+// }
+// **************************************
+// .owl-carousel.owl-drag .owl-item {
+//     width: 396px !important;
+// }
+// .owl-carousel.owl-drag .owl-item .cloned {
+//     width: 396px !important;
+// }
+// .owl-carousel.owl-drag .owl-item .cloned .active {
+//     width: 396px !important;
+// }
+// section.carousel .slider .owl-stage-outer .owl-stage .owl-carousel.owl-drag .owl-item {
+//     width: 396px !important;
+// }
+// .owl-carousel.owl-drag.owl-item {
+//     width: 396px;
+//     margin: 0;
+// }
+// *******************************
+.owl-carousel .owl-item img.carousel__img {
+    // width: 396px;
+    width: 100%;
+    margin: 0;
+}
+
+.carousel .slider .owl-nav .owl-prev {
+    display: none;
+    // color: $primecolor;
+    // font-size: 90px;
+    // position: absolute;
+    // top: 50%;
+    // left: 15%;
+    // transform: translateY(-50%);
+}
+
+.carousel .slider .owl-nav .owl-next {
+    color: $primecolor;
+    font-size: 90px;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
