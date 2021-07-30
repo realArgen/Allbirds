@@ -63,32 +63,15 @@ $(document).ready(function() {
 
 // tabs
 
-let link_1 = document.querySelector(`.tab-link-1`);
-let link_2 = document.querySelector(`.tab-link-2`);
-let link_3 = document.querySelector(`.tab-link-3`);
+let link = document.querySelectorAll(`.tab-link`);
+let tab = document.querySelectorAll(`.tab-item`)
 
-let tab_1 = document.querySelector(`.tab-item-1`);
-let tab_2 = document.querySelector(`.tab-item-2`);
-let tab_3 = document.querySelector(`.tab-item-3`);
-
-
-link_1.addEventListener(`click`, function(e) {
-    e.preventDefault();
-    tab_1.classList.toggle(`exist`);
-    console.log("clicked1");
-});
-
-link_2.addEventListener(`click`, function(e) {
-    e.preventDefault();
-    tab_2.classList.toggle(`exist`);
-    console.log("clicked2");
-});
-
-link_3.addEventListener(`click`, function(e) {
-    e.preventDefault();
-    tab_3.classList.toggle(`exist`);
-    console.log("clicked3");
-});
+for (let i = 0; i < link.length; i++) {
+    link[i].addEventListener(`click`, function(e) {
+        e.preventDefault();
+        tab[i].classList.toggle(`exist`);
+    });
+}
 
 
 //up-btn

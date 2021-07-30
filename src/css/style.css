@@ -331,9 +331,7 @@ a {
   color: #000000;
 }
 
-.tab-item-1,
-.tab-item-2,
-.tab-item-3 {
+.tab-item {
   visibility: hidden;
 }
 
