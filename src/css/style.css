@@ -1426,6 +1426,7 @@ a {
   .hero {
     padding-top: 78px;
     padding-bottom: 147px;
+    height: 400px;
   }
 
   .hero__content-subtitle {
